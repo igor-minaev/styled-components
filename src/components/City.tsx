@@ -1,23 +1,20 @@
 import React from 'react';
 import {MoneyType} from "../App";
+import {Bankomat} from "./Bankomat";
 
 type CityPropsType = {
     data: MoneyType[]
 }
 
-const City: React.FC<CityPropsType> = (props) => {
+export const City: React.FC<CityPropsType> = (props) => {
     const {data, ...restProps} = props
     const mappedMoney = data.map(m => {
-        return <li key={m.id}>
-            <span>{m.banknotes}</span>
-            <span>{m.value}</span>
-        </li>
+        return <Bankomat key={m.id} banknote={m}/>
     })
     return (
         <div>
-            <ul>{mappedMoney}</ul>
+            {mappedMoney}
         </div>
     );
 };
 
-export default City;

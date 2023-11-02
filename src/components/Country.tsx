@@ -1,13 +1,13 @@
 import React from 'react';
 import {BanknotesType, MoneyType} from "../App";
-import City from "./City";
+import {City} from "./City";
 
 type CountryPropsType = {
     data: MoneyType[]
     setFilter: (filter: BanknotesType) => void
 }
 
-const Country: React.FC<CountryPropsType> = (props) => {
+export const Country: React.FC<CountryPropsType> = (props) => {
     const {data, setFilter, ...restProps} = props
     const onAllClickHandler = () => setFilter('All')
     const onDollarsClickHandler = () => setFilter('Dollars')
@@ -23,4 +23,3 @@ const Country: React.FC<CountryPropsType> = (props) => {
     );
 };
 
-export default Country;
