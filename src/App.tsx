@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import Country from "./components/Country";
 
 export type BanknotesType = "All" | 'Rubles' | 'Dollars'
 export type MoneyType = {
@@ -33,7 +34,7 @@ function App() {
     const filteredMoney = filterMoney(money, filter)
     return (
         <div className="App">
-
+            <Country data={filteredMoney} setFilter={setFilter}/>
         </div>
     );
 }
