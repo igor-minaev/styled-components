@@ -1,6 +1,7 @@
 import React from 'react';
 import {MoneyType} from "../App";
 import {Bankomat} from "./Bankomat";
+import styled from "styled-components";
 
 type CityPropsType = {
     data: MoneyType[]
@@ -12,9 +13,17 @@ export const City: React.FC<CityPropsType> = (props) => {
         return <Bankomat key={m.id} banknote={m}/>
     })
     return (
-        <div>
+        <Wrapper>
             {mappedMoney}
-        </div>
+        </Wrapper>
     );
 };
 
+
+const Wrapper = styled.div`
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+`

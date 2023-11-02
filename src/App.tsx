@@ -12,14 +12,14 @@ export type MoneyType = {
 
 const defaultMoney: MoneyType[] = [
     {id: crypto.randomUUID(), banknotes: 'Rubles', value: 100, numberId: 'j23j42k3kre'},
-    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 100, numberId: 'f23j42k3kre'},
-    {id: crypto.randomUUID(), banknotes: 'Rubles', value: 100, numberId: 'j73j42k3kre'},
-    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 100, numberId: 'k23j42k3kre'},
+    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 40, numberId: 'f23j42k3kre'},
+    {id: crypto.randomUUID(), banknotes: 'Rubles', value: 55, numberId: 'j73j42k3kre'},
+    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 20, numberId: 'k23j42k3kre'},
     {id: crypto.randomUUID(), banknotes: 'Dollars', value: 100, numberId: 'r73j42k3kre'},
     {id: crypto.randomUUID(), banknotes: 'Rubles', value: 100, numberId: 'o23j42k3kre'},
-    {id: crypto.randomUUID(), banknotes: 'Rubles', value: 100, numberId: 'p23j42k3kre'},
-    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 100, numberId: 'w23j42k3kre'},
-    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 100, numberId: 'v23j42k3kre'},
+    {id: crypto.randomUUID(), banknotes: 'Rubles', value: 70, numberId: 'p23j42k3kre'},
+    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 45, numberId: 'w23j42k3kre'},
+    {id: crypto.randomUUID(), banknotes: 'Dollars', value: 90, numberId: 'v23j42k3kre'},
     {id: crypto.randomUUID(), banknotes: 'Rubles', value: 100, numberId: 'n73j42k3kre'}
 ]
 
