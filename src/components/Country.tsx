@@ -1,5 +1,6 @@
 import React from 'react';
 import {BanknotesType, MoneyType} from "../App";
+import City from "./City";
 
 type CountryPropsType = {
     data: MoneyType[]
@@ -16,7 +17,7 @@ const Country: React.FC<CountryPropsType> = (props) => {
             <button onClick={onAllClickHandler}>All</button>
             <button onClick={onDollarsClickHandler}>Dollars</button>
             <button onClick={onRublesClickHandler}>Rubles</button>
-
+            <City data={data}/>
 
         </div>
     );
